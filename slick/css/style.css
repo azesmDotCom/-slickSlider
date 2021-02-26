@@ -57,7 +57,6 @@ html, body {
 .slider .slick-arrow.slick-prev {
     left: 0;
     background: url('../img/sl-arrow_l.svg') 0 0 / 100% no-repeat;
-    
 }
 
 .slider .slick-arrow.slick-next {
@@ -65,23 +64,31 @@ html, body {
     background: url('../img/sl-arrow_r.svg') 0 0 / 100% no-repeat;
 }
 
-.slider .slick-dots{
+/*infinite: false - выкл. бесконечную прокрутку сайта script.js - .slick-disabled*/
+.slider .slick-arrow.slick-disabled {
+    opacity: 0.2;
+}
+
+.slider .slick-dots {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.slider .slick-dots li{
+
+.slider .slick-dots li {
     list-style: none;
     /*list-style: none; - откл. стили точек в li*/
     margin: 0 10px;
 }
 
 /*Активная точка слайдера*/
-.slider .slick-dots li.slick-active button{
-background-color: transparent;
-border: 2px solid #9B111E;
+
+.slider .slick-dots li.slick-active button {
+    background-color: transparent;
+    border: 2px solid #9B111E;
 }
-.slider .slick-dots button{
+
+.slider .slick-dots button {
     font-size: 0;
     /*font-size: 0; - убирает надписи с точек, по умолчанию видим цифры*/
     width: 10px;
@@ -89,10 +96,6 @@ border: 2px solid #9B111E;
     background-color: #213b6b;
     border-radius: 50%;
 }
-
-
-
-
 
 /*.wrapper{
 	height: 100%;

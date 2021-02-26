@@ -2,8 +2,20 @@ $(document).ready(function () {
     $('.slider').slick({
         arrows: true,
         dots: true,
-        adaptiveHeight: true
+        adaptiveHeight: true,
         //adaptiveHeight: true -слайдер подстраивается по высоте под размер слайдов
+        slidesToShow: 3,
+        slidesToScroll: 2,
+        speed: 500,
+        easing: 'easeInElastic',
+        //easing: 'easeInElastic' - функция плавности анимации https://easings.net/ru
+        infinite: false,
+        //infinite: false - выкл. бесконечную прокрутку сайта затемняет стрелку, если нельзя листать
+        //style scc - .slider .slick-arrow.slick-disabled
+        autoplay: true,
+        //autoplay: true - автоматическая прокрутка сладов
+        autoplaySpeed: 1500,
+        //autoplaySpeed: 1500 - период прокрутки autoplay
     });
 });
 
