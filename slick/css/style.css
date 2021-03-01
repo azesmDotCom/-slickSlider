@@ -35,13 +35,12 @@ html, body {
 
 /*vertical : true*/
 
-.slick-track {
-    display: flex;
-    align-items: flex-start;
+/*.slick-track {
+    display: block;
+    
     /*align-items: flex-start; прижимает слайды вверх для вкл. адаптивности
     см. script.js
-    adaptiveHeight: true -слайдер подстраивается по высоте под размер слайдов*/
-}
+    adaptiveHeight: true -слайдер подстраивается по высоте под размер слайдов}*/
 
 /* Ограничивающая оболочка */
 
@@ -63,9 +62,8 @@ html, body {
 .slider__item {
     height: 225px;
 }*/
+
 /*vertical : true*/
-
-
 
 .slider .slick-arrow {
     position: absolute;
@@ -131,6 +129,33 @@ html, body {
 .slider__item.slick-center {
     opacity: 1;
 }*/
+
+/*____________________________sliderbig______________________________*/
+
+/*.sliderbig {}*/
+
+.sliderbig__item {
+    text-align: center;
+}
+
+/*управление содержимым слайдера, добавление объекта
+$('.slider').slick('slickAdd' , '<div class="newslide">123</div>');*/
+
+.link_add {
+    color: #fff;
+}
+
+.link_remove {
+    color: #fff;
+}
+
+
+
+
+
+
+
+
 
 /*.wrapper{
 	height: 100%;

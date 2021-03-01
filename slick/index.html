@@ -12,12 +12,75 @@
 <body>
     <div class="wrapper">
 
+        <!------------------------------------sliderbig------------------------------------------>
+        <!--Позволяет подгружать изображения в браузер по мере необходимости, а не все вместе.
+                        Повышает скорость загрузки и оптимизирует страницу-->
+
+        <!--<div class="sliderbig">
+
+            <div class="sliderbig__item">
+                <img data-lazy="img/slides/big/1.jpg" alt="slide">
+            </div>
+            <div class="sliderbig__item">
+                <img data-lazy="img/slides/big/2.jpg" alt="slide">
+            </div>
+            <div class="sliderbig__item">
+                <img data-lazy="img/slides/big/3.jpg" alt="slide">
+            </div>
+            <div class="sliderbig__item">
+                <img data-lazy="img/slides/big/4.jpg" alt="slide">
+            </div>
+            <div class="sliderbig__item">
+                <img data-lazy="img/slides/big/5.jpg" alt="slide">
+            </div>
+            <div class="sliderbig__item">
+                <img data-lazy="img/slides/big/6.jpg" alt="slide">
+            </div>
+            <div class="sliderbig__item">
+                <img data-lazy="img/slides/big/8.jpg" alt="slide">
+            </div>
+            <div class="sliderbig__item">
+                <img data-lazy="img/slides/big/9.jpg" alt="slide">
+            </div>
+        </div>-->
+
+        <!--Обычный синтаксис-->
+
+        <!--<div class="sliderbig">
+
+            <div class="sliderbig__item">
+                <img src="img/slides/big/1.jpg" alt="slide">
+            </div>
+            <div class="sliderbig__item">
+                <img src="img/slides/big/2.jpg" alt="slide">
+            </div>
+            <div class="sliderbig__item">
+                <img src="img/slides/big/3.jpg" alt="slide">
+            </div>
+            <div class="sliderbig__item">
+                <img src="img/slides/big/4.jpg" alt="slide">
+            </div>
+            <div class="sliderbig__item">
+                <img src="img/slides/big/5.jpg" alt="slide">
+            </div>
+            <div class="sliderbig__item">
+                <img src="img/slides/big/6.jpg" alt="slide">
+            </div>
+            <div class="sliderbig__item">
+                <img src="img/slides/big/8.jpg" alt="slide">
+            </div>
+            <div class="sliderbig__item">
+                <img src="img/slides/big/9.jpg" alt="slide">
+            </div>
+        </div>-->
+
+
         <div class="slider">
 
             <div class="slider__item">
                 <img src="img/slides/1.jpg" alt="slide">
             </div>
-            <div class="slider__item">
+            <div class="slider__item filter">
                 <img src="img/slides/2.jpg" alt="slide">
             </div>
             <div class="slider__item">
@@ -26,7 +89,7 @@
             <div class="slider__item">
                 <img src="img/slides/4.jpg" alt="slide">
             </div>
-            <div class="slider__item">
+            <div class="slider__item filter">
                 <img src="img/slides/5.jpg" alt="slide">
             </div>
             <div class="slider__item">
@@ -41,13 +104,20 @@
 
         </div>
 
+        <!--appendArrows: script.js перемещает стрелки-->
+        <!--<div class="content">
+
+        </div>-->
+
+        <!--управление содержимым слайдера, добавление объекта
+        $('.slider').slick('slickAdd' , '<div class="newslide">123</div>');-->
+        <!--<a href="" class="link_add">Добавить</a>
+        <a href="" class="link_remove">Удалить</a>-->
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/script.js"></script>
     </div>
-
-
-
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/script.js"></script>
 </body>
 
 </html>
